@@ -45,7 +45,7 @@ This repository represents the engineering phase of my broader cybersecurity car
 
 ### Lab 1: Deploying a Secure Azure Infrastructure utilizing Terraform
 **Scenario:** The engineering team requires a highly secure, scalable architecture. Manual portal configurations lead to configuration drift and human error. As a Security Engineer, I authored Terraform scripts to programmatically deploy an Azure Virtual Network (VNet) with isolated subnets, Network Security Groups (NSGs) enforcing strict inbound/outbound rules, and a securely configured Storage Account with public access explicitly disabled.
-*   **Action:** Developed `main.tf`, `variables.tf`, and `providers.tf` to implement least-privilege network rules and validate state management.
+*   **Action:** Developed `main.tf` , `variables.tf` , and `providers.tf` to implement least-privilege network rules and validate state management.
 *   **Skills Applied:** Infrastructure as Code (IaC), Terraform, Azure Networking (VNet/NSG), Secure Storage Configurations, Cloud Automation, Linux/Unix CLI.
 
 <br>
