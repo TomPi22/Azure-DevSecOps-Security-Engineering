@@ -62,7 +62,7 @@ Furthermore, to lay the groundwork for secure secret management (Phase 2), I pro
 ### Lab 2: Automating IAM Audits & Secrets Management with Python
 **Scenario:** Hardcoded credentials are a leading cause of cloud breaches. To mitigate this risk, I developed a Python automation script that interacts with the Azure CLI and Azure Key Vault to securely retrieve and manage secrets without exposing them in the source code. Additionally, the script performs an automated audit of IAM role assignments to detect over-privileged service principals.
 
-
+![Automação de Segredos](image_ebd1e8.png)
 
 <img width="1102" height="632" alt="image" src="https://github.com/user-attachments/assets/3b2dca84-f6e9-420e-b6b0-130258c9260d" />
 
