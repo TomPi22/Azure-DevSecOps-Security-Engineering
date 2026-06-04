@@ -44,13 +44,16 @@ This repository represents the engineering phase of my broader cybersecurity car
 ## 🏗️ Phase 1: Infrastructure as Code (IaC) & Cloud Posture
 
 ### Lab 1: Deploying a Secure Azure Infrastructure utilizing Terraform
-**Scenario:** The engineering team requires a highly secure, scalable architecture. Manual portal configurations lead to configuration drift and human error. As a Security Engineer, I authored Terraform scripts to programmatically deploy an Azure Virtual Network (VNet) with isolated subnets, Network Security Groups (NSGs) enforcing strict inbound/outbound rules, and a securely configured Storage Account with public access explicitly disabled.
+**Scenario:** The engineering team requires a highly secure, scalable, and cost-effective architecture. Manual portal configurations lead to configuration drift and human error. As a Security Engineer, I authored Terraform scripts to programmatically deploy an Azure Virtual Network (VNet) with strict Network Security Groups (NSGs) and a securely configured Storage Account with public access explicitly disabled.
+
+Furthermore, to lay the groundwork for secure secret management (Phase 2), I provisioned an **Azure Key Vault** directly via IaC. This vault was designed with **FinOps principles** in mind (utilizing the Standard tier and ephemeral soft-delete configurations for lab environments) to store database credentials safely, completely removing hardcoded secrets from the infrastructure.
+
 <img width="1095" height="635" alt="image" src="https://github.com/user-attachments/assets/b623c61f-e9d5-400e-b7bf-6b6b93d1914e" />
 <img width="1913" height="1031" alt="image" src="https://github.com/user-attachments/assets/083d42c7-a1e1-4969-a1f0-cafd372c0352" />
 
 
-*   **Action:** Developed `main.tf` , `variables.tf` , and `providers.tf` to implement least-privilege network rules and validate state management.
-*   **Skills Applied:** Infrastructure as Code (IaC), Terraform, Azure Networking (VNet/NSG), Secure Storage Configurations, Cloud Automation, Linux/Unix CLI.
+*   **Action:** Developed `main.tf` , `variables.tf` , and `providers.tf` to implement least-privilege network rules, state management, and secure secret injection via code.
+*   **Skills Applied:** Infrastructure as Code (IaC), Terraform, Azure Networking (VNet/NSG), Secure Storage, **Azure Key Vault Provisioning**, Cloud Automation, **FinOps Practices**.
 
 <br>
 
