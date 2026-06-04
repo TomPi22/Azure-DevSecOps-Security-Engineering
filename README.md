@@ -64,6 +64,8 @@ Furthermore, to lay the groundwork for secure secret management (Phase 2), I pro
 
 <img width="1102" height="632" alt="image" src="https://github.com/user-attachments/assets/3b2dca84-f6e9-420e-b6b0-130258c9260d" />
 
+<br>
+
 *   **Action:** Utilized Python `azure-identity` and `azure-keyvault-secrets` libraries to automate the generation of daily IAM compliance reports.
 *   **Skills Applied:** Python Programming, API Integration, IAM Auditing, Secret Management (Azure Key Vault), Automation Scripting, Principle of Least Privilege.
 
