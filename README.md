@@ -52,8 +52,8 @@ Furthermore, to lay the groundwork for secure secret management (Phase 2), I pro
 <img width="1913" height="1031" alt="image" src="https://github.com/user-attachments/assets/083d42c7-a1e1-4969-a1f0-cafd372c0352" />
 
 
-*   **Action:** Developed `main.tf` , `variables.tf` , and `providers.tf` to implement least-privilege network rules, state management, and secure secret injection via code.
-*   **Skills Applied:** Infrastructure as Code (IaC), Terraform, Azure Networking (VNet/NSG), Secure Storage, **Azure Key Vault Provisioning**, Cloud Automation, **FinOps Practices**.
+*   **Action:** Developed `main.tf`, `variables.tf`, and `providers.tf` to implement least-privilege network rules, state management, and secure secret injection via code.
+*   **Skills Applied:** Infrastructure as Code (IaC), Terraform, Azure Networking (VNet/NSG), Secure Storage, Azure Key Vault Provisioning, Cloud Automation, FinOps Practices.
 
 <br>
 
