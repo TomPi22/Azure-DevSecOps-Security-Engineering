@@ -48,11 +48,12 @@ This repository represents the engineering phase of my broader cybersecurity car
 
 Furthermore, to lay the groundwork for secure secret management (Phase 2), I provisioned an **Azure Key Vault** directly via IaC. This vault was designed with **FinOps principles** in mind (utilizing the Standard tier and ephemeral soft-delete configurations for lab environments) to store database credentials safely, completely removing hardcoded secrets from the infrastructure.
 
+*   **Action:** Developed `main.tf`, `variables.tf`, and `providers.tf` to implement least-privilege network rules, state management, and secure secret injection via code.
 <img width="1095" height="635" alt="image" src="https://github.com/user-attachments/assets/b623c61f-e9d5-400e-b7bf-6b6b93d1914e" />
 <img width="1913" height="1031" alt="image" src="https://github.com/user-attachments/assets/083d42c7-a1e1-4969-a1f0-cafd372c0352" />
 
+<br>
 
-*   **Action:** Developed `main.tf`, `variables.tf`, and `providers.tf` to implement least-privilege network rules, state management, and secure secret injection via code.
 *   **Skills Applied:** Infrastructure as Code (IaC), Terraform, Azure Networking (VNet/NSG), Secure Storage, Azure Key Vault Provisioning, Cloud Automation, FinOps Practices.
 
 <br>
@@ -62,11 +63,11 @@ Furthermore, to lay the groundwork for secure secret management (Phase 2), I pro
 ### Lab 2: Automating IAM Audits & Secrets Management with Python
 **Scenario:** Hardcoded credentials are a leading cause of cloud breaches. To mitigate this risk, I developed a Python automation script that interacts with the Azure CLI and Azure Key Vault to securely retrieve and manage secrets without exposing them in the source code. Additionally, the script performs an automated audit of IAM role assignments to detect over-privileged service principals.
 
+*   **Action:** Utilized Python `azure-identity` and `azure-keyvault-secrets` libraries to automate the generation of daily IAM compliance reports.
 <img width="1102" height="632" alt="image" src="https://github.com/user-attachments/assets/3b2dca84-f6e9-420e-b6b0-130258c9260d" />
 
 <br>
 
-*   **Action:** Utilized Python `azure-identity` and `azure-keyvault-secrets` libraries to automate the generation of daily IAM compliance reports.
 *   **Skills Applied:** Python Programming, API Integration, IAM Auditing, Secret Management (Azure Key Vault), Automation Scripting, Principle of Least Privilege.
 
 <br>
@@ -89,7 +90,15 @@ Furthermore, to lay the groundwork for secure secret management (Phase 2), I pro
 
 ### Lab 4: Vulnerability Scanning & Cloud Compliance Assessment
 **Scenario:** To meet internal auditing and compliance requirements, the environment was onboarded to Microsoft Defender for Cloud. I automated the process of extracting vulnerability scan results and aligning the Azure resources against compliance benchmarks (CIS Controls).
+
 *   **Action:** Evaluated security recommendations, executed remediations, and generated compliance status reports for executive stakeholders and global security partners.
+
+<br>
+
+
+
+<br>
+
 *   **Skills Applied:** Cloud Security Posture Management (CSPM), Vulnerability Scanning, Compliance & Auditing (CIS Controls), Microsoft Defender for Cloud, Executive Reporting.
 
 ---
