@@ -1,0 +1,32 @@
+```yaml
+name: DevSecOps CI/CD Security Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  sast-scanning:
+    name: Static Application Security Testing (SAST)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Code
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: 🛡️ Install Security Tools (Checkov & Bandit)
+        run: pip install checkov bandit
+
+      - name: 🔍 Scan Python Code (Bandit)
+        run: bandit secret_hunter.py
+        
+      - name: 🏗️ Scan Infrastructure as Code (Checkov)
+        # O --soft-fail permite que a pipeline não quebre com alertas de baixo risco
+        run: checkov -d . --framework terraform --soft-fail
