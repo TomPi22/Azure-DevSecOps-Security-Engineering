@@ -12,19 +12,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout Code
+      - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: ⚙️ Setup Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      - name: 🛡️ Install Security Tools (Checkov & Bandit)
+      - name: Install Security Tools (Checkov & Bandit)
         run: pip install checkov bandit
 
-      - name: 🔍 Scan Python Code (Bandit)
+      - name: Scan Python Code (Bandit)
         run: bandit secret_hunter.py
         
-      - name: 🏗️ Scan Infrastructure as Code (Checkov)
+      - name: Scan Infrastructure as Code (Checkov)
         run: checkov -d . --framework terraform --soft-fail
