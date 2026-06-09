@@ -76,6 +76,11 @@ Furthermore, to lay the groundwork for secure secret management (Phase 2), I pro
 ### Lab 3: Building a Secure CI/CD Pipeline with GitHub Actions
 **Scenario:** To support rapid development without compromising security, I engineered a DevSecOps pipeline using GitHub Actions. Every Pull Request (PR) automatically triggers a workflow that performs Static Application Security Testing (SAST) on the Python code and scans the Terraform files for misconfigurations before any infrastructure is deployed to Azure.
 *   **Action:** Configured `.github/workflows/security-pipeline.yml` to block deployments containing high-severity vulnerabilities utilizing tools like Checkov and Bandit.
+
+<br>
+
+<img width="1913" height="1022" alt="image" src="https://github.com/user-attachments/assets/a39763a6-ffd7-40cc-9842-b0643ee7d2dc" />
+
 *   **Skills Applied:** DevSecOps, CI/CD Pipelines, GitHub Actions, SAST Tools (Checkov/Bandit), Version Control (Git), Shift-Left Security.
 
 <br>
