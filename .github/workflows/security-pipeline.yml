@@ -27,5 +27,4 @@ jobs:
         run: bandit secret_hunter.py
         
       - name: 🏗️ Scan Infrastructure as Code (Checkov)
-        # O --soft-fail permite que a pipeline não quebre com alertas de baixo risco
         run: checkov -d . --framework terraform --soft-fail
