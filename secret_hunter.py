@@ -5,7 +5,7 @@ from azure.core.exceptions import ResourceNotFoundError
 
 # A URL exata do seu cofre na Azure
 KEY_VAULT_URL = "https://kv-secops-20261199.vault.azure.net/"
-SECRET_NAME = "admin-db-password"
+SECRET_NAME = "admin-db-password" # nosec B105
 
 def get_secret_from_vault():
     print(f"🕵️ Iniciando operação furtiva no Key Vault: {KEY_VAULT_URL}...")
