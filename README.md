@@ -95,7 +95,8 @@ Furthermore, to lay the groundwork for secure secret management (Phase 2), I pro
 
 <br>
 
-
+<img width="1907" height="1023" alt="image" src="https://github.com/user-attachments/assets/5d60851d-2e5f-4df6-863f-6f63a5c216f3" />
+<img width="1913" height="1026" alt="image" src="https://github.com/user-attachments/assets/4571e3c5-7fb9-470a-a785-3b732c8ea3a6" />
 
 <br>
 
